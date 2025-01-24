@@ -8,6 +8,9 @@ import Resources from "@/components/Resource";
 import Section from "@/components/Section";
 import Community from "@/components/Communiy";
 import Heading from "@/components/Heading";
+import BusinessCard from "@/components/Bussiness";
+import ConsumerCard from "@/components/Consumer";
+
 
 export default function Home() {
   return (
@@ -21,6 +24,14 @@ export default function Home() {
 
       <section id="hero">
         <Hero />
+      </section>
+
+      <section>
+        <BusinessCard />
+      </section>
+
+      <section>
+        <ConsumerCard />
       </section>
 
       <section>

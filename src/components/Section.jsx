@@ -4,7 +4,7 @@ import Image from "next/image";
 import producerImage from "../../public/producer.svg";
 import farmerImage from "../../public/farmer.svg";
 import homeCookImage from "../../public/homecook.svg";
-import companyImage from "../../public/company.png"; // Replace with your actual image path
+import companyImage from "../../public/company.png";
 
 const TabContent = ({ imageSrc }) => (
   <div
@@ -40,7 +40,6 @@ const Section = () => {
 
   return (
     <div className="flex flex-col items-center justify-center py-16 px-4">
-      {/* Company Image */}
       <div className="w-full mb-8">
         <Image
           src={companyImage}
@@ -50,7 +49,6 @@ const Section = () => {
         />
       </div>
 
-      {/* Heading */}
       <h1 className="text-3xl md:text-4xl font-semibold text-center max-w-3xl mb-4">
         <span className="text-[#85C349]">Connecting Farmers</span> and Home Cooks for a Thriving Food{" "}
         <span className="text-[#85C349]">Community!</span>
@@ -60,7 +58,6 @@ const Section = () => {
         local, sustainable food.
       </p>
 
-      {/* Tabs */}
       <div className="flex space-x-6 mb-6">
         {["Producer", "Farmer", "Home Cook"].map((tab) => (
           <div
@@ -82,7 +79,6 @@ const Section = () => {
         ))}
       </div>
 
-      {/* Tab Content */}
       <div className="w-full flex justify-center">{renderImage()}</div>
     </div>
   );

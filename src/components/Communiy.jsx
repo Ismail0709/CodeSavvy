@@ -23,14 +23,12 @@ export default function Community() {
         </p>
       </div>
 
-      {/* Button */}
       <div className="absolute top-[35%]">
         <button className="px-8 py-4 text-lg md:text-xl bg-[#85C349] text-white rounded-full shadow-lg hover:bg-blue-600 transition-all">
           Get Started
         </button>
       </div>
 
-      {/* Wave Images */}
       <div className="absolute bottom-0 w-full flex justify-between items-end">
         <Image
           src={wave1}

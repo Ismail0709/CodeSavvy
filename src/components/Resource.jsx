@@ -62,7 +62,6 @@ const Resources = () => {
 
   return (
     <div className="h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-10">
-      {/* Heading */}
       <h1 className="text-left text-2xl md:text-3xl font-semibold mb-4 md:mb-6 pt-8 md:pt-12">
         Resources & <span className="text-[#85C349]">Education</span>
       </h1>
@@ -70,9 +69,7 @@ const Resources = () => {
         Learn More About Local Recipes, ingredient guides, certifications.
       </p>
 
-      {/* News Carousel */}
       <div className="relative flex items-center">
-        {/* Backward Button */}
         <button
           onClick={handlePrev}
           className="absolute left-0 z-10 bg-[#85C349] text-white p-2 rounded-full hover:bg-blue-600 transition transform -translate-x-2"
@@ -87,17 +84,14 @@ const Resources = () => {
               key={item.id}
               className="flex flex-col bg-white shadow-md rounded-lg overflow-hidden w-[95%] sm:w-[45%] md:w-1/3 lg:w-1/4 mx-2"
             >
-              {/* Image */}
               <Image
                 src={item.image}
                 alt={`News: ${item.title}`}
                 className="w-full h-44 object-cover"
               />
-              {/* Date */}
               <div className="text-left text-gray-500 text-xs mt-2 px-4">
                 {item.date}
               </div>
-              {/* Title */}
               <h4 className="text-left text-gray-800 font-semibold text-sm mt-2 px-4 mb-4">
                 {item.title}
               </h4>
@@ -105,7 +99,6 @@ const Resources = () => {
           ))}
         </div>
 
-        {/* Forward Button */}
         <button
           onClick={handleNext}
           className="absolute right-0 z-10 bg-[#85C349] text-white p-2 rounded-full hover:bg-blue-600 transition transform translate-x-2"
