@@ -1,10 +1,15 @@
 "use client";
 import React from 'react'
+import Image from 'next/image';
+import HeroImg from '../../public/hero.png'
 
 function Hero() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-white">
-          <div className="relative w-full max-w-6xl p-6">
+        <div className="relative flex flex-col items-center justify-center min-h-screen bg-white">
+          {/* Background Circle */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#F3F9ED] rounded-full z-0"></div>
+
+          <div className="relative w-full max-w-6xl p-6 z-10">
             <div className="absolute top-0 left-0 w-full h-full grid grid-cols-12 grid-rows-6 gap-4">
               <div className="col-span-1 row-span-1 flex items-center justify-center">
                 <img
@@ -47,18 +52,18 @@ function Hero() {
                 <span className="absolute top-12 text-sm bg-white px-2 py-1 rounded-lg shadow-md">Producer</span>
               </div>
             </div>
-            <div className="text-center">
-              <h1 className="text-4xl font-bold text-gray-900">
-                Discover and <span className="text-green-500">Support</span> Your <span className="text-green-500">Local Food Heroes</span>
+            <div className="text-center max-w-lg mx-auto">
+              <h1 className="text-4xl font-bold text-gray-900 leading-tight">
+                Discover and <span className="text-[#85C349]">Support</span> Your <span className="text-[#85C349]">Local Food </span>Heroes.
               </h1>
-              <p className="mt-4 text-gray-600">
+              <p className=" text-sm mt-4 text-gray-500">
                 Connecting consumers with local food producers for a healthier, sustainable future.
               </p>
               <div className="mt-6 flex justify-center space-x-4">
                 <button className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-full shadow-md">
                   Join as a Consumer
                 </button>
-                <button className="px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-md">
+                <button className="px-6 py-3 bg-[#85C349] text-white font-semibold rounded-full shadow-md">
                   Upgrade Your Business
                 </button>
               </div>
@@ -74,8 +79,8 @@ function Hero() {
               </div>
             </div>
             <div className="mt-12 relative">
-              <img
-                src="https://placehold.co/600x300"
+              <Image
+                src={HeroImg}
                 alt="Dashboard preview"
                 className="w-full rounded-lg shadow-lg"
                 width="600"
